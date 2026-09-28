@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Pedro Work</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/x-icon" href="fav.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar" aria-label="Informazioni pagina">
+        <div>
+          <p class="eyebrow" id="greeting">Ciao Pedro</p>
+          <h1>Pedroni Home</h1>
+        </div>
+        <time class="clock" id="clock" datetime="">
+          <span id="time">--:--</span>
+          <span id="date">--</span>
+        </time>
+      </header>
+
+      <section class="hero" aria-labelledby="home-title">
+        <img class="avatar" src="pedro.jpg" alt="Pedro" />
+        <div class="intro">
+          <h2 id="home-title" class="quote-title">
+            <span>"There must be some kind of way outta here..."</span>
+            <span>said the joker to the thief</span>
+          </h2>
+        </div>
+
+        <form class="search" id="search-form" role="search">
+          <label class="sr-only" for="search-input">Cerca su Google</label>
+          <span class="search-icon" aria-hidden="true">/</span>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Cerca sul web o usa yt, maps, mail..."
+            autocomplete="off"
+            autofocus
+          />
+          <button type="submit" id="search-button">Cerca</button>
+        </form>
+      </section>
+
+      <section class="weather" aria-labelledby="ferrara-weather-title">
+        <div class="weather-heading">
+          <div>
+            <p class="eyebrow">Meteo</p>
+            <h2 id="ferrara-weather-title">Ferrara</h2>
+          </div>
+        </div>
+        <div class="weather-grid" id="weather-grid-ferrara">
+          <div class="weather-state">Caricamento meteo...</div>
+        </div>
+      </section>
+
+      <section class="weather" aria-labelledby="bologna-weather-title">
+        <div class="weather-heading">
+          <div>
+            <p class="eyebrow">Meteo</p>
+            <h2 id="bologna-weather-title">Bologna</h2>
+          </div>
+        </div>
+        <div class="weather-grid" id="weather-grid-bologna">
+          <div class="weather-state">Caricamento meteo...</div>
+        </div>
+      </section>
+
+      <section class="shortcuts" aria-label="Collegamenti rapidi">
+        <div class="shortcut-group">
+          <h3>AI</h3>
+          <div class="shortcut-grid">
+            <a
+              class="shortcut chatgpt"
+              href="https://chat.openai.com/"
+              data-key="8"
+            >
+              <span class="key">8</span>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M8 5.4A4 4 0 0 1 15 4a4 4 0 0 1 4 5.8A4 4 0 0 1 16 17a4 4 0 0 1-7 1.6A4 4 0 0 1 5 12a4 4 0 0 1 3-6.6Z"
+                  />
+                  <path d="M8 9.2 12 7l4 2.2v5.6L12 17l-4-2.2Z" />
+                </svg>
+              </span>
+              <span>ChatGPT</span>
+            </a>
+            <a class="shortcut claude" href="https://claude.ai/" data-key="9">
+              <span class="key">9</span>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M17.5 6.5A7 7 0 1 0 18 17" />
+                  <path d="M14.5 9 18 12l-3.5 3" />
+                </svg>
+              </span>
+              <span>Claude</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="shortcut-group">
+          <h3>Work</h3>
+          <div class="shortcut-grid">
+            <a
+              class="shortcut oltre"
+              href="https://intranet.oltresolutions.it/"
+              data-key="o"
+            >
+              <span class="key">O</span>
+              <span class="icon">O</span>
+              <span>Oltresolutions</span>
+            </a>
+            <a
+              class="shortcut make"
+              href="https://intranet.makeitalia.com/"
+              data-key="m"
+            >
+              <span class="key">M</span>
+              <span class="icon">MI</span>
+              <span>Makeitalia</span>
+            </a>
+            <a
+              class="shortcut gitlab"
+              href="https://gitlab.oltresolutions.it/"
+              data-key="g"
+            >
+              <span class="key">G</span>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="m12 20 8-5.7-2.3-8-3.2 5.2h-5L6.3 6.3 4 14.3z" />
+                </svg>
+              </span>
+              <span>GitLab</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
